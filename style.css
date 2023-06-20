@@ -1,4 +1,11 @@
 h1{
-    color: brown;
+    color: gray;
+    text-align: center;
+}
+
+.tab{
+    margin: 5px;
+    padding:5px;
+    background: gray;
     text-align: center;
 }
