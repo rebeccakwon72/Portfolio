@@ -1,11 +1,10 @@
 h1{
-    color: gray;
-    text-align: center;
+    color: black;
 }
 
 .tab{
     margin: 5px;
     padding:5px;
-    background: gray;
+    background: lightblue;
     text-align: center;
 }
