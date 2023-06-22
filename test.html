@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #slider, ul
+            {
+                height: 100px;
+            }
+            
+            #slider
+            {
+                margin: auto;
+                overflow: hidden; 
+                padding: 20px;
+                margin-top: 50px;
+                position: relative;
+                width: 150px;
+            }
+
+            #slider li
+            {
+                float: left;
+                position: relative;
+                width: 150px;
+                display: inline-block;
+                height: 200px;
+            }
+
+            #slider ul
+            {
+                list-style: none;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 9000px;
+                transition: left .01s linear;
+                -moz-transition: left .01s linear;
+                -o-transition: left .01s linear;
+                -webkit-transition: left .01s linear;
+                margin-left: -25px;
+                font-family: open sans;
+                color: #666;
+            }
+
+            /*** Content ***/
+
+            .slider-container
+            {
+                color:#000;
+                margin: 0 auto;
+                padding: 0;
+                width: 150px;
+                min-height: 180px;
+                text-align:center;
+            }
+
+            .slider-container h2
+            {
+                color: #fff;
+            }
+
+            .slider-container  p
+            {
+                margin: 20px 25px 0px 25px;
+                font-weight: semi-bold;
+                line-height: 150%;
+            }
+
+            /*** target hooks ****/
+
+            @-webkit-keyframes slide-animation {
+                0% {opacity:0;}
+                2% {opacity:1;}
+                20% {left:0px; opacity:1;}
+                22.5% {opacity:0.6;}
+                25% {left:-150px; opacity:1;}
+                45% {left:-150px; opacity:1;}
+                47.5% {opacity:0.6;}
+                50% {left:-300px; opacity:1;}
+                70% {left:-300px; opacity:1;}
+                72.5% {opacity:0.6;}
+                75% {left:-450px; opacity:1;}
+                95% {opacity:1;}
+                98% {left:-450px; opacity:0;} 
+                100% {left:0px; opacity:0;}
+            }
+/*
+             @-webkit-keyframes slide-animation {
+                0% {opacity:0;}
+                2% {opacity:1;}
+                20% {top:0px; opacity:1;}
+                22.5% {opacity:0.6;}
+                25% {top:50px; opacity:1;}
+                45% {top:50px; opacity:1;}
+                47.5% {opacity:0.6;}
+                50% {top:100px; opacity:1;}
+                70% {top:100px; opacity:1;}
+                72.5% {opacity:0.6;}
+                75% {top:150px; opacity:1;}
+                95% {opacity:1;}
+                98% {top:150px; opacity:0;} 
+                100% {top:0px; opacity:0;}
+            }
+*/
+            #slider ul
+            {
+                -webkit-animation: slide-animation 10s infinite;
+            }
+
+            #slider ul:hover
+            {
+                -moz-animation-play-state: paused;
+                -webkit-animation-play-state: paused;
+            }
+
+            .right_float {
+                width: 400px;
+                float: right;
+                text-align: left;
+            }
+
+            #big_container {
+                text-align: center;
+                width: 600px;
+                padding: 0px;
+
+                /*centering*/
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+        </style>
+
+    </head>
+<body>
+    <div id="big_container">
+        <div class="right_float">
+            <p style="font-size: 50px;">I'm Rebecca.</p>
+        </div>
+
+        <div id="slider">
+            <ul>
+            <li>
+            <div class="slider-container">
+                <p style="font-size:50px">Hi</p>
+            </div>
+            </li>
+            
+            <li>
+                <div class="slider-container">
+                <p style="font-size:50px">مرحبًا</p>
+                </div>
+            </li>
+            
+            <li>
+                <div class="slider-container">
+                <p style="font-size:50px">你好</p>
+            </div>
+            </li>
+            <li>
+                <div class="slider-container">
+                <p style="font-size:50px">안녕</p>
+            </div>
+            </li>
+            <li>
+                <div class="slider-container">
+                <p style="font-size:50px">안녕2</p>
+            </div>
+            </li>
+            <li>
+                <div class="slider-container">
+                <p style="font-size:50px">안녕3</p>
+            </div>
+            </li>
+            <li>
+                <div class="slider-container">
+                <p style="font-size:50px">안녕4</p>
+            </div>
+            </li>
+
+            </ul>
+        </div>
+        
+    </div>
+</body>    
