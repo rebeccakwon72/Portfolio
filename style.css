@@ -1,3 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+:root {
+	--primary-color: #0363fe;
+	--secondary-color: #d0d67732;
+	--menu-resting-color: #e6880d;
+}
+
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Arial", sans-serif;
+	background-color: rgb(128, 47, 0);
+}
+.demoContainer {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.demoTabs {
+	display: flex;
+	position: relative;
+	background: rgba(224, 223, 209, 0.5);
+	box-shadow: 0 0 1px 0 rgba(#185ee0, 0.15), 0 6px 12px 0 rgba(#F00004, 0.15);
+	padding: 0.75rem;
+	border-radius: 99px; 
+	* {
+		z-index: 2;
+	}
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+.demo_tab {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 54px;
+	width: 150px;
+	font-size: 1.25rem;
+	font-weight: 500;
+	border-radius: 99px;  
+	cursor: pointer;
+	transition: color 0.15s ease-in;
+}
+
+.demo_tab a:link { text-decoration: none; color:var(--menu-resting-color);}
+.demo_tab a:visited { text-decoration: none; color:var(--menu-resting-color);}
+.demo_tab a:hover { text-decoration: none; color:var(--menu-resting-color);}
+.demo_tab a:active { text-decoration: none; color:var(--menu-resting-color);}
+
+input[type="radio"] {
+	&:checked {
+		& + label {
+			color: var(--primary-color);
+		}
+	}
+}
+
+input[id="radio-1"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(0);
+		}
+	}
+}
+
+input[id="radio-2"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(100%);
+		}
+	}
+}
+
+input[id="radio-3"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(200%);
+		}
+	}
+}
+
+input[id="radio-4"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(300%);
+		}
+	}
+}
+
+.glider {
+	position: absolute;
+	display: flex;
+	height: 54px;
+	width: 150px;
+	background-color: var(--secondary-color);
+	z-index: 1;
+	border-radius: 99px;  
+	transition: 0.25s ease-out;
+}
+
+@media (max-width: 700px) {
+	.tabs {
+		transform: scale(0.6);
+	}
+}
+
 h1{
     color: black;
     text-align: center;
@@ -9,102 +129,6 @@ body{
     background-color:  white;
 }
 
-/**** Navigation ****/            
-nav {
-    margin: 27px auto 0;
-  
-    position: relative;
-    width: 640px;
-    height: 50px;
-    
-    background-color: #d4d6d9;
-    border-radius: 8px;
-    font-size: 0;
-  }
-  nav a {
-    line-height: 50px;
-    height: 100%;
-    font-size: 20px;
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    cursor: pointer;
-  }
-  nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease 0s;
-    border-radius: 8px;
-  }
-
-  nav .current_tab {
-    background-color: blue;
-    border-radius: 8px;
-  }
-  
-  a:nth-child(1) {
-    width: 150px;
-    border-radius: 8px;
-    margin-left:5px;
-    margin-right:5px;
-    }
-  a:nth-child(2) {
-    width: 150px;
-    border-radius: 8px;
-    margin-left:5px;
-    margin-right:5px;
-    }
-  a:nth-child(3) {
-    width: 150px;
-    border-radius: 8px;
-    margin-left:5px;
-    margin-right:5px;
-  }
-  a:nth-child(4) {
-    width: 150px;
-    border-radius: 8px;
-    margin-left:5px;
-    margin-right:5px;
-  }
-
-  nav a:hover {
-    background-color: rgb(0, 189, 252);
-    border-radius: 8px;   
-  } 
-
-
-/*  
-  nav .start-home, a:nth-child(1):hover~.animation {
-    width: 150px;
-    left: 0;
-    background-color: #1abc9c;
-  }
-
-  nav .start-about, a:nth-child(2):hover~.animation {
-    width: 150px;
-    left: 150px;
-    background-color: #e74c3c;
-  }
-  nav .start-blog, a:nth-child(3):hover~.animation {
-    width: 150px;
-    left: 300px;
-    background-color: #3498db;
-  }
-  nav .start-portefolio, a:nth-child(4):hover~.animation {
-    width: 150px;
-    left: 450px;
-    background-color: #9b59b6;
-  }
-  */
-  span {
-      color: #2BD6B4;
-  }
 
 /*
     #globalnav.globalnav-scrim, .globalnav-scrim #globalnav {
