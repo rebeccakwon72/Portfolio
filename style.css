@@ -2,8 +2,8 @@
 
 :root {
 	--primary-color: #0363fe;
-	--secondary-color: #d0d67732;
-	--menu-resting-color: #e6880d;
+	--secondary-color: #4b4c4532;
+	--menu-resting-color: #000000;
 }
 
 
@@ -15,7 +15,7 @@
 
 body {
 	font-family: "Arial", sans-serif;
-	background-color: rgb(128, 47, 0);
+	background-color: rgb(255, 255, 255);
 }
 .demoContainer {
 	position: absolute;
@@ -125,9 +125,6 @@ h1{
     
 }
 
-body{
-    background-color:  white;
-}
 
 
 /*
