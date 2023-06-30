@@ -1,9 +1,11 @@
+/*Main menu Glding >>BEGIN<<*/
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 :root {
-	--primary-color: #0363fe;
-	--secondary-color: #4b4c4532;
-	--menu-resting-color: #000000;
+	--primary-color: #fe5f03;
+	--secondary-color: #ffffff4b;
+	--menu-resting-color: #e1e1e188;
 }
 
 
@@ -18,20 +20,22 @@ body {
 	background-color: rgb(255, 255, 255);
 }
 .demoContainer {
-	position: absolute;
+	position: sticky;
 	left: 0;
-	top: 0;
+	top: 20px;
 	right: 0;
-	bottom: 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  margin-top: 20px;
 }
-.demoTabs {
+
+/* entire dashboard */
+.demoTabs { 
 	display: flex;
 	position: relative;
-	background: rgba(224, 223, 209, 0.5);
-	box-shadow: 0 0 1px 0 rgba(#185ee0, 0.15), 0 6px 12px 0 rgba(#F00004, 0.15);
+	background: rgba(223, 223, 223, 0.5);
+	box-shadow: 0 0 1px 0 rgba(#0000004d, 0.15), 0 6px 12px 0 rgba(#0000004d, 0.15);
 	padding: 0.75rem;
 	border-radius: 99px; 
 	* {
@@ -54,6 +58,7 @@ input[type="radio"] {
 	border-radius: 99px;  
 	cursor: pointer;
 	transition: color 0.15s ease-in;
+  z-index: 2;
 }
 
 .demo_tab a:link { text-decoration: none; color:var(--menu-resting-color);}
@@ -72,7 +77,7 @@ input[type="radio"] {
 input[id="radio-1"] {
 	&:checked {
 		& ~ .glider {
-			transform: translateX(0);
+			transform: translateX(0) scale(1, 1);
 		}
 	}
 }
@@ -106,10 +111,11 @@ input[id="radio-4"] {
 	display: flex;
 	height: 54px;
 	width: 150px;
+  
 	background-color: var(--secondary-color);
 	z-index: 1;
 	border-radius: 99px;  
-	transition: 0.25s ease-out;
+	transition: 0.01s ease-out;
 }
 
 @media (max-width: 700px) {
@@ -117,15 +123,20 @@ input[id="radio-4"] {
 		transform: scale(0.6);
 	}
 }
+/*Main menu Glding >>END<< */
+
 
 h1{
     color: black;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 220px;
+    font-size: 50px;
     
 }
 
-
+.worlds {
+  margin-bottom: 50px;
+}
 
 /*
     #globalnav.globalnav-scrim, .globalnav-scrim #globalnav {
