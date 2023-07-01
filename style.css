@@ -1,7 +1,9 @@
-/*NAME SLIDER*/
 
-
-
+body {
+	font-family: "Arial", sans-serif;
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+}
 
 /*Main menu Glding >>BEGIN<<*/
 
@@ -20,11 +22,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	font-family: "Arial", sans-serif;
-	background-color: rgb(255, 255, 255);
-
-}
 .demoContainer {
 	position: sticky;
 	left: 0;
@@ -141,32 +138,12 @@ h1{
     
 }
 
-/* IMAGES */
 
-.face {
-  height: 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
 
-.table {
-  height: 500px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
 
-.lion {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
 
-/*
+
+/* BLURRING EFFECT
     #globalnav.globalnav-scrim, .globalnav-scrim #globalnav {
     --globalnav-backdrop-filter: saturate(180%) blur(20px);
     --globalnav-background: rgba(251, 251, 253, .8);

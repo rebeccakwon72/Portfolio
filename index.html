@@ -71,6 +71,9 @@
                 line-height: 150%;
             }
 
+
+
+
             /*** target hooks ****/
 
           
@@ -90,25 +93,9 @@
                 95% {opacity:1;}
                 98% {left:-450px; opacity:0;} 
                 100% {left:0px; opacity:0;}
+                
             }
-/*
-             @-webkit-keyframes slide-animation {
-                0% {opacity:0;}
-                2% {opacity:1;}
-                20% {top:0px; opacity:1;}
-                22.5% {opacity:0.6;}
-                25% {top:50px; opacity:1;}
-                45% {top:50px; opacity:1;}
-                47.5% {opacity:0.6;}
-                50% {top:100px; opacity:1;}
-                70% {top:100px; opacity:1;}
-                72.5% {opacity:0.6;}
-                75% {top:150px; opacity:1;}
-                95% {opacity:1;}
-                98% {top:150px; opacity:0;} 
-                100% {top:0px; opacity:0;}
-            }
-*/
+
             #slider ul
             {
                 -webkit-animation: slide-animation 10s infinite;
@@ -125,6 +112,9 @@
                 float: right;
                 text-align: left;
             }
+            .right_float p{
+                margin-bottom: 0px;
+            }
 
             #big_container {
                 text-align: center;
@@ -136,6 +126,46 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-top: 10px;
+            }
+
+            /*centering*/
+
+            #my_face {
+                    width: 100%;
+                    background-color: blue;
+                    margin-top: 10px;
+                }
+            #my_face * {
+                margin:0px;
+                padding: 0px;
+            }
+
+            #left_greeting {
+                width: 30%;
+                height: 600px;
+                background-color: rgb(222, 110, 172);
+                text-align: center;
+            }
+
+            #middle_face {
+                width: 40%;
+                position: absolute;
+                background-color: rgb(158, 158, 164);
+                left: 30%;
+                
+                
+            }
+            
+            #middle_face .face {
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+
+            #right_empty {
+                width: 30%;
+                background-color: rgb(0, 255, 140);
+                float: right;
             }
 
         </style>
@@ -161,37 +191,52 @@
                 <p style="font-size: 50px">I'm Rebecca.</p>
             </div>
 
-        <!-- Hello Words -->    
-        <div id="slider">
-            <ul>
-            <li>
-            <div class="slider-container">
-                <p style="font-size:50px">Hi!</p>
-            </div>
-            </li>
-            
-            <li>
+            <!-- Hello Words -->    
+            <div id="slider">
+                <ul>
+                <li>
                 <div class="slider-container">
-                <p style="font-size:50px">你好</p>
+                    <p style="font-size:50px">Hi!</p>
                 </div>
-            </li>
-            
-            <li>
-                <div class="slider-container">
-                <p style="font-size:50px">Holá</p>
+                </li>
+                
+                <li>
+                    <div class="slider-container">
+                    <p style="font-size:50px">你好</p>
+                    </div>
+                </li>
+                
+                <li>
+                    <div class="slider-container">
+                    <p style="font-size:50px">Holá</p>
+                </div>
+                </li>
+                <li>
+                    <div class="slider-container">
+                    <p style="font-size:50px">안녕!</p></div>
+                </li>
+                </ul>
             </div>
-            </li>
-            <li>
-                <div class="slider-container">
-                <p style="font-size:50px">안녕!</p></div>
-            </li>
-            </ul>
         </div>
-        <img class="face" src="https://htmlcolorcodes.com/assets/images/colors/red-color-solid-background-1920x1080.png">
-        <br>
-        <h3>Spend a Day</h3>
-        <img class="table" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAG1BMVEWWSwD////YwreQPgDMr6CSQQDr4NvJq5qMMwCQLat9AAABKElEQVR4nO3PiRHCMADAsPShyf4TwxIcp2BNYI9jd+PXAV/Xoa9DX4e+Dn0d+jr0dej7g8Pn3Nsz5rp2tua4X2Nnr7tDXYe+Dn0d+jr0dejr0Nehr0Nfh74OfR36OvR16OvQ16GvQ1+Hvg59Hfo69HXo69DXoa9DX4e+Dn0d+jr0dejr0Nehr0Nfh74OfR36OvR16OvQ16GvQ1+Hvg59Hfo69HXo69DXoa9DX4e+Dn0d+jr0dejr0Nehr0Nfh74OfR36OvR16OvQ16GvQ1+Hvg59Hfo69HXo69DXoa9DX4e+Dn0d+jr0dejr0Nehr0Nfh74OfR36OvR16OvQ16GvQ1+Hvg59Hfo69H0O57p2tuZ4zr0949hdh74OfR36OvR16OvQ16GvQ98bvVg0B9ww1Z0AAAAASUVORK5CYII=">
-        <br>
+        <!--CENTERING-->
+
+        <div id="my_face">    
+            <div id="right_empty">
+                <p>This is an empty space</p>
+            </div>
+
+            <div id="middle_face">
+              <img class="face" src="img/rebecca.jpg" width:"550px" height="750px"/>
+            </div>
+
+          
+            <div id="left_greeting">
+              <h3>Spend a Day</h3>
+              <h3>with <span style="font-family: niconne; font-size: 30px;">M</span>e</h3>
+            </div>
+        </div>
+
+
         <br>
         <img class="lion" src="https://www.korea.net/upload/content/editImage/Sujebi_end_L0.jpg">
         <br>
