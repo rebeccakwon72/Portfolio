@@ -7,6 +7,7 @@
         <style>    
 
             
+            /*LANGUAGE GREETINGS*/
             #slider, ul
             {
                 height: 100px;
@@ -47,14 +48,14 @@
                 color: #666;
             }
 
-            /*** Content ***/
-
             .slider-container
             {
                 color:#000;
                 margin: 0 auto;
                 padding: 0;
                 width: 150px;
+        
+        
                 min-height: 180px;
                 text-align:center;
             }
@@ -70,13 +71,6 @@
                 font-weight: semi-bold;
                 line-height: 150%;
             }
-
-
-
-
-            /*** target hooks ****/
-
-          
 
             @-webkit-keyframes slide-animation {
                 0% {opacity:0;}
@@ -94,7 +88,7 @@
                 98% {left:-450px; opacity:0;} 
                 100% {left:0px; opacity:0;}
                 
-            }
+            } 
 
             #slider ul
             {
@@ -108,7 +102,7 @@
             }
 
             .right_float {
-                width: 360px;
+                width: 380px;
                 float: right;
                 text-align: left;
             }
@@ -116,6 +110,7 @@
                 margin-bottom: 0px;
             }
 
+            /*contains both LANGUAGE GREETING and my NAME*/
             #big_container {
                 text-align: center;
                 width: 600px;
@@ -127,14 +122,19 @@
                 margin-right: auto;
                 margin-top: 10px;
             }
+            /*END OF LANGUAGE GREETINGS*/
 
-            /*centering*/
+
+            /*DIFFERENT SECTIONS OF WEB*/
 
             #my_face {
-                    width: 100%;
-                    background-color: blue;
-                    margin-top: 10px;
-                }
+                width: 100%;
+
+                margin-top: 50px;
+
+                /*new*/
+                position:relative;
+            }
             #my_face * {
                 margin:0px;
                 padding: 0px;
@@ -142,18 +142,17 @@
 
             #left_greeting {
                 width: 30%;
-                height: 600px;
+                height: 750px;
                 background-color: rgb(222, 110, 172);
                 text-align: center;
+
             }
 
             #middle_face {
                 width: 40%;
                 position: absolute;
-                background-color: rgb(158, 158, 164);
+                /* background-color: rgb(255, 2, 2); */
                 left: 30%;
-                
-                
             }
             
             #middle_face .face {
@@ -167,6 +166,17 @@
                 background-color: rgb(0, 255, 140);
                 float: right;
             }
+            /*END of DIFFERENT SECTIONS OF WEB*/
+
+
+            /*TABLE*/
+            #table {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+            }
+
 
         </style>
     </head>
@@ -202,13 +212,13 @@
                 
                 <li>
                     <div class="slider-container">
-                    <p style="font-size:50px">你好</p>
+                    <p style="font-size:50px">你好!</p>
                     </div>
                 </li>
                 
                 <li>
                     <div class="slider-container">
-                    <p style="font-size:50px">Holá</p>
+                    <p style="font-size: 50px">¡Hola!</p>
                 </div>
                 </li>
                 <li>
@@ -222,11 +232,11 @@
 
         <div id="my_face">    
             <div id="right_empty">
-                <p>This is an empty space</p>
             </div>
 
             <div id="middle_face">
-              <img class="face" src="img/rebecca.jpg" width:"550px" height="750px"/>
+              <img class="face" src="img/rebecca.png" width:"550px" height="750px"/>
+              <!--WIDTH 550PX HEIGHT 708PX-->
             </div>
 
           
@@ -236,10 +246,6 @@
             </div>
         </div>
 
-
-        <br>
-        <img class="lion" src="https://www.korea.net/upload/content/editImage/Sujebi_end_L0.jpg">
-        <br>
-        <img class="lion" src="https://www.korea.net/upload/content/editImage/Sujebi_end_L0.jpg">
+        <img id="table" src="https://t4.ftcdn.net/jpg/02/23/06/05/360_F_223060577_Up871tVFzW9s3J5y6ILNQnDiPeOOsBTC.jpg">
 
 </html>
