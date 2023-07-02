@@ -135,9 +135,17 @@ h1{
     text-align: center;
     margin-top: 130px;
     font-size: 35px;
+	font-weight: lighter;
     
 }
 
+
+
+.dindin {
+	font-family: 'Pinyon Script', cursive; 
+	font-size: 60px;
+	font-weight: 100;
+}
 
 
 
