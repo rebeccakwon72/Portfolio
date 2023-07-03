@@ -181,9 +181,52 @@
                 margin-left: auto;
                 margin-right: auto;
                 width: 95%;
+                z-index: 1;
             } 
 
+            #silver_Ware {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100px;
+            }
 
+            #sliver {
+                position: absolute;
+                top: 1650px;
+                left: 870px;
+                height: 220px;
+                width: 170px;
+                z-index: 2;
+            }
+
+            #plate {
+                position: absolute;
+                top: 1600px;
+                left: 500px;
+                height: 300px;
+                width: 230px;
+                z-index: 2;
+            }
+
+            #bap {
+                position: absolute;
+                top: 1600px;
+                left: 700px;
+                height: 240px;
+                width: 190px;
+                z-index: 2;
+            }
+
+            #bap_me {
+                position: absolute;
+                top: 1090px;
+                left: 480px;
+                height: 240px;
+                width: 190px;
+                z-index: 2;
+                transform: scaleY(-1);
+            }
         </style>
     </head>
 
@@ -253,7 +296,13 @@
 
         <div id="eating_area">
             <div id="table">
-                <center><img src="img/table.png" width=1350px; object-fit: cover;></center>
+                <center><img src="img/table.png" width=1300px; object-fit: cover;></center>
+                <img id="sliver" src="img/sliverware_edited.png">
+
+                <img id="plate" src="img/butterfly_plate.png">
+
+                <img id="bap" src="img/bap_edited.png">
+                <img id="bap_me" src="img/bap_edited.png">
             </div>
             
             <div id="sujebi">
@@ -264,8 +313,8 @@
                 <img src="img/kimchi_jig.png" width:"300px" height:"300px">
             </div>
 
-            <div id="plate">
-                <img src="img/butterfly_plate.png" width: "300px" height: "300px">
+            <div id="bap_down">
+                <img src="img/bap_edited.png" width: "100px" height: "100px">
             </div>
         </div>
 </html>
