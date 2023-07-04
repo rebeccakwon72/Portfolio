@@ -137,13 +137,20 @@ input[id="radio-4"] {
 /*Main menu Glding >>END<< */
 
 /* EVERY TITLE EXCEPT FOR NAME */
-h1{
+.begin{
     color: black;
     text-align: center;
     margin-top: 130px;
     font-size: 35px;
 	font-weight: lighter;
     
+}
+
+.titles{
+	padding-left: 30px;
+	color:rgb(0, 0, 0);
+	font-size: 50px;
+	font-weight: lighter;
 }
 
 
