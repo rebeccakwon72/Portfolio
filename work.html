@@ -8,6 +8,85 @@
         <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Rebecca Kwon ⋅ Work</title>
+
+        <style>
+             /*FLODERS*/
+            #folders{
+                display: flex;
+                justify-content: center;
+                padding: 120px 20px 10px;
+            }
+
+            #art{
+                display:flex;
+                width:250px;
+                padding-left: 10px;
+                padding-right: 10px;
+                display:flex;
+                flex-direction: column-reverse;
+            }
+            
+            #computer{
+                display:flex;
+                width:250px;
+                padding-left: 10px;
+                padding-right: 10px;
+                display:flex;
+                flex-direction: column-reverse;
+            }
+
+            #clubs{
+                display:flex;
+                width:250px;
+                padding-left: 10px;
+                padding-right: 10px;
+                display:flex;
+                flex-direction: column-reverse;
+            }
+
+            /*WORDS*/
+            #folder_descriptors{
+                display: flex;
+                justify-content: center;
+            }
+
+            .art_text{
+                display:flex;
+                width:250px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 120px;
+                display:flex;
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .computer_text{
+                display:flex;
+                width:250px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 120px;
+                display:flex;
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .clubs_text{
+                display:flex;
+                width:250px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 120px;
+                display:flex;
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .writing{
+                text-align: left;
+            }
+        </style>
     </head>
 
     <body>
@@ -31,14 +110,42 @@
         </div>
 
 
-        <div id="all_works">
-            <img src="img/files_edit.png">  <!--Art-->
-            <img src="img/files_edit.png">  <!--Computer science-->
-            <img src="img/files_edit.png">  <!--Clubs-->
+        <div id="folders">
+            <img id="art" src="img/files_edit.png">
+            <img id="computer" src="img/files_edit.png">
+            <img id="clubs" src="img/files_edit.png">
+        </div>
+
+        <div id="folder_descriptors">
+            <p class="art_text">Art</p>
+            <p class="computer_text">Computer Science</p>
+            <p class="clubs_text">Clubs</p>
+        </div>
+
+        <div id="the_papers_inside">
+            <div id="the_arts">
+                <div class="writing">
+                    <h2 class="work_section">Writing.</h2>
+                </div>
+
+                <div class="stained">
+                    <h2 class="work_section">Stained Glass.</h2>
+                </div>
+
+                <div class="design">
+                    <h2 class="work_section">Design.</h2>
+                </div>
+            </div>
+
+            <div id="the_computers">
+            </div>
+
+            <div id="the_clubs">
+            </div>
         </div>
 
 
-
+        <script src="script.js"></script>
     </body>
 
 </html>

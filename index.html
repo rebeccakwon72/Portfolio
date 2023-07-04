@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <meta name="viewport" content="width=device=width, inital-scale=1.0">
+        <!-- <meta name="viewport" content="width=device=width, inital-scale=1.0"> -->
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -245,6 +245,45 @@
                 z-index: 2;
                 transform: scaleY(-1);
             }
+
+            /*food divs*/
+
+            /*sujebis*/
+            .sujebi_image{
+                float:left;
+            }
+
+            #sujebi_down{
+                background-color: red;
+            }
+            
+            /* kimchis */
+            .kimchi_jig_image{
+                float:left;
+            }
+
+            #kimchi_jig_down{
+                background-color: blue;
+            }
+
+            /*jajangs*/
+            .jajang_image {
+                float:left;
+            }
+
+            #jajang_down{
+                background-color: orange;
+            }
+
+            /*baps*/
+            .bap_image{
+                float: left;
+            }
+
+            #bap_down{
+                background-color: pink;
+            }
+
         </style>
     </head>
 
@@ -327,20 +366,19 @@
             </div>
             
             <div id="sujebi_down">
-                <img src="img/sujebi_clean.png" width:"300px" height:"300px">
-                <p>fhdsjkasldkjhfskalhfhhdjaklsjdhlaksjdhfalksjdhfalksjdhfalksjdhfalksjdhakljsdhalksjdhflkajsdhfalksjdhf</p>
+                <img class="sujebi_image" src="img/sujebi_clean.png" width:"300px" height:"300px">
             </div>
 
             <div id="kimchi_jig_down">
-                <img src="img/kimchi_jig.png" width:"300px" height:"300px">
+                <img class="kimchi_jig_image" src="img/kimchi_jig.png" width:"300px" height:"300px">
             </div>
 
             <div id="bap_down">
-                <img src="img/bap.png" width: "100px" height: "100px">
+                <img class="bap_image" src="img/bap.png" width: "100px" height: "100px">
             </div>
 
             <div id="jajang_down">
-                <img src="img/JAJANG.png" width: "220px" height:"220px"
+                <img class="jajang_image" src="img/JAJANG.png" width: "220px" height:"220px">
             </div>
         </div>
 </html>
