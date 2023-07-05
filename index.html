@@ -2,7 +2,7 @@
 <html>
 
     <head>
-        <!-- <meta name="viewport" content="width=device=width, inital-scale=1.0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -257,6 +257,9 @@
                 background-color: red;
             }
             
+            .sujebi_text{
+                float:right;
+            }
             /* kimchis */
             .kimchi_jig_image{
                 float:left;
@@ -265,7 +268,9 @@
             #kimchi_jig_down{
                 background-color: blue;
             }
-
+            .kimchi_jig_text{
+                float:right;
+            }
             /*jajangs*/
             .jajang_image {
                 float:left;
@@ -274,7 +279,9 @@
             #jajang_down{
                 background-color: orange;
             }
-
+            .jajang_text{
+                float:right;
+            }
             /*baps*/
             .bap_image{
                 float: left;
@@ -283,7 +290,9 @@
             #bap_down{
                 background-color: pink;
             }
-
+            .bap_text{
+                float:right;
+            }
         </style>
     </head>
 
@@ -333,27 +342,27 @@
                 </li>
                 </ul>
             </div>
+
+            <div id="my_face">    
+                <div id="right_empty">
+                </div>
+    
+                <div id="middle_face">
+                  <img class="face" src="img/rebecca.png" width:"550px" height="750px"/>
+                  <!--WIDTH 550PX HEIGHT 708PX on photoshop-->
+                </div>
+    
+              
+                <div id="left_greeting">
+                  <h1 id="brekkie"><span class="dindin">B</span>reakfast<br>the most important<br>meal of the day.</h1>
+                </div>
+            </div>
         </div>
         <!--END OF HELLO-->
 
-        <div id="my_face">    
-            <div id="right_empty">
-            </div>
-
-            <div id="middle_face">
-              <center><img class="face" src="img/rebecca.png" width:"550px" height="750px"/></center>
-              <!--WIDTH 550PX HEIGHT 708PX on photoshop-->
-            </div>
-
-          
-            <div id="left_greeting">
-              <h1 id="brekkie"><span class="dindin">B</span>reakfast<br>the most important<br>meal of the day.</h1>
-            </div>
-        </div>
-
         <div id="eating_area">
             <div id="table">
-                <center><img src="img/table.png" width=1300px; object-fit: cover;></center>
+                <img src="img/table.png" width=1300px; object-fit: cover;>
 
                 <img id="sliver" src="img/sliverware_edited.png">
                 <img id="sliver_me" src="img/sliverware_edited.png">
@@ -366,19 +375,23 @@
             </div>
             
             <div id="sujebi_down">
-                <img class="sujebi_image" src="img/sujebi_clean.png" width:"300px" height:"300px">
+                <img class="sujebi_image" src="img/sujebi_clean.png">
+                <p class="sujebi_text">helllloooooo</p>
             </div>
 
             <div id="kimchi_jig_down">
-                <img class="kimchi_jig_image" src="img/kimchi_jig.png" width:"300px" height:"300px">
+                <img class="kimchi_jig_image" src="img/kimchi_jig.png">
+                <p class="kimchi_jig_text">helllloooooo</p>
             </div>
 
             <div id="bap_down">
-                <img class="bap_image" src="img/bap.png" width: "100px" height: "100px">
+                <img class="bap_image" src="img/bap.png">
+                <p class="bap_text">helllloooooo</p>
             </div>
 
             <div id="jajang_down">
-                <img class="jajang_image" src="img/JAJANG.png" width: "220px" height:"220px">
+                <img class="jajang_image" src="img/JAJANG.png">
+                <p class="jajang_text">helllloooooo</p>
             </div>
         </div>
 </html>
