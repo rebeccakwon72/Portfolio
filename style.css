@@ -111,6 +111,14 @@ input[id="radio-4"] {
 	}
 }
 
+input[id="radio-5"] {
+	&:checked {
+		& ~ .glider {
+			transform: translateX(400%);
+		}
+	}
+}
+
 .glider {
 	position: absolute;
 	display: flex;
