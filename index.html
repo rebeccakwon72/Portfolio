@@ -192,18 +192,19 @@
 
             #sliver {
                 position: absolute;
-                top: 1650px;
-                left: 870px;
-                height: 220px;
-                width: 170px;
+                top: 1600px;
+                left: 840px;
+                height: 320px;
+                width: 270px;
                 z-index: 2;
             }
 
             #sliver_me {
-                top: 1500px;
-                left: 700px;
-                height: 220px;
-                width: 170px;
+                position: absolute;
+                top: 1050px;
+                left: 400px;
+                height: 320px;
+                width: 270px;
                 z-index: 2;
                 transform: scaleY(-1);
             }
@@ -246,6 +247,104 @@
                 transform: scaleY(-1);
             }
 
+            #cup_snow {
+                position: absolute;
+                top: 1156px;
+                left: 270px;
+                height: 260px;
+                width: 210px;
+                z-index: 2;
+                transform: scaleY(-1);
+            }
+
+            #cup_grace {
+                position: absolute;
+                top: 1550px;
+                left: 1000px;
+                height: 310px;
+                width: 240px;
+                z-index: 2;
+            }
+
+            #table_sujebi {
+                position: absolute;
+                top: 1245px;
+                left: 669px;
+                height: 330px;
+                width: 250px;
+                z-index: 2;
+            }
+
+            #table_kimchi_jig {
+                position: absolute;
+                top: 1405px;
+                left: 550px;
+                height: 290px;
+                width: 230px;
+                z-index: 2;
+            }
+
+            #table_kimbap {
+                position: absolute;
+                top: 1380px;
+                left: 910px;
+                height: 270px;
+                width: 180px;
+                z-index: 2;
+                transform: rotate(45deg);
+            }
+            #table_kale {
+                position: absolute;
+                top: 1355px;
+                left: 170px;
+                height: 195px;
+                width: 195px;
+                z-index: 2;
+            }
+            #table_chicken {
+                position: absolute;
+                top: 1355px;
+                left: 385px;
+                height: 210px;
+                width: 210px;
+                z-index: 2;
+            }
+            #table_jajang {
+                position: absolute;
+                top: 1495px;
+                left: 260px;
+                height: 320px;
+                width: 240px;
+                z-index: 2;
+            }
+
+            #table_toast {
+                position: absolute;
+                top: 1395px;
+                left: 1110px;
+                height: 230px;
+                width: 230px;
+                z-index: 2;
+            }
+
+            #table_grapes {
+                position: absolute;
+                top: 1550px;
+                left: 135px;
+                height: 120px;
+                width: 120px;
+                z-index: 2;
+            }
+
+            #table_mango {
+                position: absolute;
+                top: 1130px;
+                left: 970px;
+                height: 300px;
+                width: 400px;
+                z-index: 2;
+                rotate: 90deg;
+            }
             /*food divs*/
 
             /*sujebis*/
@@ -293,6 +392,34 @@
             .bap_text{
                 float:right;
             }
+
+            .food_container{
+                width: 1300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .food_container::after{
+                clear: both;
+                content: "";
+  display: table;
+            }
+
+            .food_img{
+                float: left;
+                width: 35%;
+                padding: 15px;
+                background-color: bisque;
+            }
+
+            .food_txt{
+                float: left;
+                width: 65%;
+                padding: 15px;
+                background-color: coral;
+            }
+
+            
+
         </style>
     </head>
 
@@ -342,23 +469,23 @@
                 </li>
                 </ul>
             </div>
-
-            <div id="my_face">    
-                <div id="right_empty">
-                </div>
-    
-                <div id="middle_face">
-                  <img class="face" src="img/rebecca.png" width:"550px" height="750px"/>
-                  <!--WIDTH 550PX HEIGHT 708PX on photoshop-->
-                </div>
-    
-              
-                <div id="left_greeting">
-                  <h1 id="brekkie"><span class="dindin">B</span>reakfast<br>the most important<br>meal of the day.</h1>
-                </div>
-            </div>
         </div>
         <!--END OF HELLO-->
+
+        <div id="my_face">    
+            <div id="right_empty">
+            </div>
+
+            <div id="middle_face">
+              <img class="face" src="img/rebecca.png" width:"550px" height="750px"/>
+              <!--WIDTH 550PX HEIGHT 708PX on photoshop-->
+            </div>
+
+          
+            <div id="left_greeting">
+              <h1 id="brekkie"><span class="dindin">B</span>reakfast<br>the most important<br>meal of the day.</h1>
+            </div>
+        </div>
 
         <div id="eating_area">
             <div id="table">
@@ -370,27 +497,82 @@
                 <img id="plate" src="img/butterfly_plate.png">
                 <img id="plate_me" src="img/butterfly_plate.png">
 
-                <img id="bap" src="img/bap.png">
+                <a href="#bap_down"><img id="bap" src="img/bap.png"></a>
                 <img id="bap_me" src="img/bap.png">
-            </div>
-            
-            <div id="sujebi_down">
-                <img class="sujebi_image" src="img/sujebi_clean.png">
-                <p class="sujebi_text">helllloooooo</p>
-            </div>
 
-            <div id="kimchi_jig_down">
-                <img class="kimchi_jig_image" src="img/kimchi_jig.png">
-                <p class="kimchi_jig_text">helllloooooo</p>
-            </div>
+                <img id="cup_snow" src="img/cup_snow.png">
+                <img id="cup_grace" src="img/cup_grace.png">
 
-            <div id="bap_down">
-                <img class="bap_image" src="img/bap.png">
+                <img id="table_sujebi" src="img/sujebi_clean.png">
+
+                <img id="table_kimbap" src="img/kimmy_fam.png">
+
+                <img id="table_kale" src="img/kale.png">
+
+                <img id="table_kimchi_jig" src="img/kimchi_jig.png">
+
+                <img id="table_chicken" src="img/chicken.png">
+
+                <img id="table_jajang" src="img/JAJANG.png">
+
+                <img id="table_toast" src="img/toastie.png">
+
+                <img id="table_grapes" src="img/grape.png">
+
+                <img id="table_mango" src="img/mango.png">
+            </div>
+        </div>
+        <div id="sujebi_down" class="food_container">
+            <div class="food_img"><img src="img/sujebi_clean.png"></div>
+            <div class="food_txt" style="height: 600px;"><p>Su Je Bi</p></div>
+        </div>
+
+        
+        <div id="kimchi_jig_down" class="food_container">
+            <div class="food_img"><img class="kimchi_jig_image" src="img/kimchi_jig.png"></div>
+            <div class="food_txt" style="height: 600px;">
+                <p>helllloooooo</p>
+            </div>
+        </div>
+
+        <div id="bap_down" class="food_container">
+            <div class="food_img"><img class="bap_image" src="img/bap.png"></div>
+            <div class="food_txt" style="height: 600px;">
                 <p class="bap_text">helllloooooo</p>
             </div>
+        </div>
 
-            <div id="jajang_down">
-                <img class="jajang_image" src="img/JAJANG.png">
+        <div id="jajang_down" class="food_container">
+            <div class="food_img"><img class="jajang_image" src="img/JAJANG.png"></div>
+            <div class="food_txt" style="height: 600px;">
+                <p class="jajang_text">helllloooooo</p>
+            </div>
+        </div>
+
+        <div id="jajang_down" class="food_container">
+            <div class="food_img"><img class="jajang_image" src="img/JAJANG.png"></div>
+            <div class="food_txt" style="height: 600px;">
+                <p class="jajang_text">helllloooooo</p>
+            </div>
+        </div>
+
+        <div id="jajang_down" class="food_container">
+            <div class="food_img"><img class="jajang_image" src="img/JAJANG.png"></div>
+            <div class="food_txt" style="height: 600px;">
+                <p class="jajang_text">helllloooooo</p>
+            </div>
+        </div>
+
+        <div id="jajang_down" class="food_container">
+            <div class="food_img"><img class="jajang_image" src="img/JAJANG.png"></div>
+            <div class="food_txt" style="height: 600px;">
+                <p class="jajang_text">helllloooooo</p>
+            </div>
+        </div>
+
+        <div id="jajang_down" class="food_container">
+            <div class="food_img"><img class="jajang_image" src="img/JAJANG.png"></div>
+            <div class="food_txt" style="height: 600px;">
                 <p class="jajang_text">helllloooooo</p>
             </div>
         </div>
