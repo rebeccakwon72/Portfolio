@@ -160,15 +160,3 @@ input[id="radio-4"] {
 	font-size: 60px;
 	font-weight: 100;
 }
-
-
-
-
-
-/* BLURRING EFFECT
-    #globalnav.globalnav-scrim, .globalnav-scrim #globalnav {
-    --globalnav-backdrop-filter: saturate(180%) blur(20px);
-    --globalnav-background: rgba(251, 251, 253, .8);
-}
-*/
-
