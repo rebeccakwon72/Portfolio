@@ -152,12 +152,15 @@
                 font-weight: lighter;
                 position: absolute;
                 bottom: 0;
+                right:65%;
                 margin-bottom: 90px;
             }
 
             #middle_face {
                 width: 40%;
                 position: absolute;
+                margin-left: auto;
+                margin-right: auto;
                 /* background-color: rgb(255, 2, 2); */
                 left: 30%;
             }
@@ -165,7 +168,7 @@
             #middle_face .face {
                 margin-left: auto;
                 margin-right: auto;
-
+                display: block;
             }
 
             #right_empty {
@@ -179,19 +182,24 @@
             /* EATING AREA*/
             #eating_area {
                 padding-left: 30px;
+                width: 100%;
             }
 
             #table {
                 display: block;
+                width: 1300px;
                 margin-left: auto;
                 margin-right: auto;
-                width: 95%;
             } 
+
+            #parent_food{
+                position: relative;
+            }
 
             #sliver {
                 position: absolute;
-                top: 1600px;
-                left: 840px;
+                top: -300px;
+                left: 750px;
                 height: 320px;
                 width: 270px;
                 z-index: 2;
@@ -199,8 +207,8 @@
 
             #sliver_me {
                 position: absolute;
-                top: 1050px;
-                left: 400px;
+                top: -850px;
+                left: 350px;
                 height: 320px;
                 width: 270px;
                 z-index: 2;
@@ -209,8 +217,8 @@
 
             #plate {
                 position: absolute;
-                top: 1600px;
-                left: 500px;
+                top: -300px;
+                left: 450px;
                 height: 300px;
                 width: 230px;
                 z-index: 2;
@@ -218,8 +226,8 @@
 
             #plate_me {
                 position: absolute;
-                top: 1090px;
-                left: 800px;
+                top: -810px;
+                left: 750px;
                 height: 300px;
                 width: 230px;
                 z-index: 2;
@@ -228,8 +236,8 @@
 
             #bap {
                 position: absolute;
-                top: 1600px;
-                left: 700px;
+                top: -300px;
+                left: 650px;
                 height: 240px;
                 width: 190px;
                 z-index: 2;
@@ -237,8 +245,8 @@
 
             #bap_me {
                 position: absolute;
-                top: 1090px;
-                left: 620px;
+                top: -810px;
+                left: 570px;
                 height: 240px;
                 width: 190px;
                 z-index: 2;
@@ -247,8 +255,8 @@
 
             #cup_snow {
                 position: absolute;
-                top: 1156px;
-                left: 270px;
+                top: -744px;
+                left: 220px;
                 height: 260px;
                 width: 210px;
                 z-index: 2;
@@ -257,8 +265,8 @@
 
             #cup_grace {
                 position: absolute;
-                top: 1550px;
-                left: 1000px;
+                top: -350px;
+                left: 950px;
                 height: 310px;
                 width: 240px;
                 z-index: 2;
@@ -266,8 +274,8 @@
 
             #table_sujebi {
                 position: absolute;
-                top: 1245px;
-                left: 669px;
+                top: -655px;
+                left: 619px;
                 height: 330px;
                 width: 250px;
                 z-index: 2;
@@ -275,8 +283,8 @@
 
             #table_kimchi_jig {
                 position: absolute;
-                top: 1405px;
-                left: 550px;
+                top: -495px;
+                left: 500px;
                 height: 290px;
                 width: 230px;
                 z-index: 2;
@@ -284,8 +292,8 @@
 
             #table_kimbap {
                 position: absolute;
-                top: 1380px;
-                left: 910px;
+                top: -520px;
+                left: 860px;
                 height: 270px;
                 width: 180px;
                 z-index: 2;
@@ -293,24 +301,24 @@
             }
             #table_kale {
                 position: absolute;
-                top: 1355px;
-                left: 170px;
+                top: -545px;
+                left: 120px;
                 height: 195px;
                 width: 195px;
                 z-index: 2;
             }
             #table_chicken {
                 position: absolute;
-                top: 1355px;
-                left: 385px;
+                top: -545px;
+                left: 335px;
                 height: 210px;
                 width: 210px;
                 z-index: 2;
             }
             #table_jajang {
                 position: absolute;
-                top: 1495px;
-                left: 260px;
+                top: -405px;
+                left: 210px;
                 height: 320px;
                 width: 240px;
                 z-index: 2;
@@ -318,8 +326,8 @@
 
             #table_toast {
                 position: absolute;
-                top: 1395px;
-                left: 1110px;
+                top: -505px;
+                left: 1060px;
                 height: 250px;
                 width: 200px;
                 z-index: 2;
@@ -327,8 +335,8 @@
 
             #table_grapes {
                 position: absolute;
-                top: 1550px;
-                left: 135px;
+                top: -350px;
+                left: 85px;
                 height: 120px;
                 width: 120px;
                 z-index: 2;
@@ -336,8 +344,8 @@
 
             #table_mango {
                 position: absolute;
-                top: 1130px;
-                left: 970px;
+                top: -770px;
+                left: 920px;
                 height: 300px;
                 width: 400px;
                 z-index: 2;
@@ -475,36 +483,38 @@
         <div id="eating_area">
             <div id="table">
                 <img src="img/table.png" width=1300px; object-fit: cover;> 
+                <div id="parent_food">
+                    <img id="sliver" src="img/sliverware_edited.png">
+                    <img id="sliver_me" src="img/sliverware_edited.png">
 
-                <img id="sliver" src="img/sliverware_edited.png">
-                <img id="sliver_me" src="img/sliverware_edited.png">
+                    <img id="plate" src="img/butterfly_plate.png">
+                    <img id="plate_me" src="img/butterfly_plate.png">
 
-                <img id="plate" src="img/butterfly_plate.png">
-                <img id="plate_me" src="img/butterfly_plate.png">
+                    <a href="#bap_down"><img id="bap" src="img/bap.png"></a>
+                    <img id="bap_me" src="img/bap.png">
 
-                <a href="#bap_down"><img id="bap" src="img/bap.png"></a>
-                <img id="bap_me" src="img/bap.png">
+                    <img id="cup_snow" src="img/cup_snow.png">
+                    <img id="cup_grace" src="img/cup_grace.png">
 
-                <img id="cup_snow" src="img/cup_snow.png">
-                <img id="cup_grace" src="img/cup_grace.png">
+                    <img id="table_sujebi" src="img/sujebi_clean.png">
 
-                <img id="table_sujebi" src="img/sujebi_clean.png">
+                    <img id="table_kimbap" src="img/kimmy_fam.png">
 
-                <img id="table_kimbap" src="img/kimmy_fam.png">
+                    <img id="table_kale" src="img/kale.png">
 
-                <img id="table_kale" src="img/kale.png">
+                    <img id="table_kimchi_jig" src="img/kimchi_jig.png">
 
-                <img id="table_kimchi_jig" src="img/kimchi_jig.png">
+                    <img id="table_chicken" src="img/chicken.png">
 
-                <img id="table_chicken" src="img/chicken.png">
+                    <img id="table_jajang" src="img/JAJANG.png">
 
-                <img id="table_jajang" src="img/JAJANG.png">
+                    <img id="table_toast" src="img/toastie.png">
 
-                <img id="table_toast" src="img/toastie.png">
+                    <img id="table_grapes" src="img/grape.png">
 
-                <img id="table_grapes" src="img/grape.png">
-
-                <img id="table_mango" src="img/mango.png">
+                    <img id="table_mango" src="img/mango.png">
+                
+                </div>
             </div>
         </div>
 
