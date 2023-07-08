@@ -1,13 +1,11 @@
-// /** @type {HTMLElement} **/
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        }
+    });
+});
 
-// //define variables for major topics
-// const art_btn = document.querySelector(".art");
-// const computer_btn = document.querySelector(".computer");
-// const club_btn = document.querySelector(".clubs");
-
-// //"art_btn" leads to new screen
-// const art_works = document.querySelector(".art_works");
-
-// art_btn.onclick=function(){
-//     art_works.
-// };
+const hiddenElements = document.querySelectorAll('.content_container');
+hiddenElements.forEach((el) => observer.observe(el));
