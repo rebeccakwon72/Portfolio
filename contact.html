@@ -18,9 +18,12 @@
             }
 
             #myInfo {
+                margin-top: 150px;
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
+                width: 60%;
+                text-align: center;
             }
         </style>
     </head>
@@ -50,9 +53,13 @@
         </div>
 
         <div id="myInfo">
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/rebecca-kwon-seoin/">Rebecca Kwon</a> Gmail: rebeccakwon72@gmail.com GitHub: rebeccakwon72 Replit: kwonreb0</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/rebecca-kwon-seoin/">Rebecca Kwon</a> | Gmail: rebeccakwon72@gmail.com | GitHub: rebeccakwon72 | Replit: kwonreb0</p>
         </div>
         
+        <form id="contactForm" method="POST" action="sendmail.php">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
     </body>
 
 </html>

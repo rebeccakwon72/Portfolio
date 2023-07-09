@@ -9,3 +9,9 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.content_container');
 hiddenElements.forEach((el) => observer.observe(el));
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    if (!isValid) {
+      event.preventDefault();
+    }
+  });
