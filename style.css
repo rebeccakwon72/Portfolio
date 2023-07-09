@@ -165,7 +165,8 @@ input[id="radio-5"] {
 
 .dindin {
 	font-family: 'Pinyon Script', cursive; 
-	font-size: 60px;
+	/* font-size: 60px; */
+	font-size: 70px;
 	font-weight: 100;
 }
 
